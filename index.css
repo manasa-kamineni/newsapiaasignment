@@ -1,0 +1,132 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7da; /* Light green background */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+}
+
+/* Style for the header box */
+.header-box {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border-radius: 10px;
+    padding: 15px; /* Padding around the header */
+    margin-bottom: 20px; /* Space below the header box */
+}
+
+h1 {
+    font-weight: bold; /* Make the heading bold */
+    font-size: 2rem;
+    margin: 0; /* Remove default margin */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#newsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+.news-article {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black; /* Black border */
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Background colors for alternating news articles */
+.news-article.bg-0 {
+    background-color: #ffcccc; /* Light red */
+}
+
+.news-article.bg-1 {
+    background-color: #ccffcc; /* Light green */
+}
+
+.news-article.bg-2 {
+    background-color: #ccccff; /* Light blue */
+}
+
+.news-article.bg-3 {
+    background-color: #ffffcc; /* Light yellow */
+}
+
+.news-article h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.news-article p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.news-article a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #newsContainer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .news-article {
+        width: 100%;
+        max-width: 100%;
+    }
+}
